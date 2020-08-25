@@ -4,7 +4,7 @@ const buildClient = ({ req }) => {
   if (typeof window === "undefined") {
     //srv
     return axios.create({
-      baseURL: "http://ticketing.dev",
+      baseURL: process.env.PUBLIC_URL,
       headers: req.headers,
     });
   } else {

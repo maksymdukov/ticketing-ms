@@ -12,13 +12,12 @@ spec:
       labels:
         app: client
     spec:
-      hostAliases:
-        - ip: 172.17.0.2
-          hostnames:
-            - ticketing.dev
       containers:
         - name: client
           image: maxop/client
+          env:
+            - name: PUBLIC_URL
+              value: "http://ticketing.dev"
 ---
 apiVersion: v1
 kind: Service
