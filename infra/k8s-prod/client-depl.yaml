@@ -17,7 +17,7 @@ spec:
           image: maxop/client
           env:
             - name: PUBLIC_URL
-              value: "http://ticketing.dev"
+              value: "http://ingress-nginx-controller.ingress-nginx.svc.cluster.local"
 ---
 apiVersion: v1
 kind: Service
