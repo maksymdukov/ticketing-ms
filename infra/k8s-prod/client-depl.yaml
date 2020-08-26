@@ -17,7 +17,7 @@ spec:
           image: maxop/client
           env:
             - name: PUBLIC_URL
-              value: "http://ticketing-app-prod.xyz"
+              value: "http://ticketing-ms.xyz"
 ---
 apiVersion: v1
 kind: Service
